@@ -8,7 +8,8 @@ Der Simulator besteht aus zwei Komponenten: Einem Backend (generiert den Fragebo
 * Der Simulator arbeitet ohne Logindaten, Datenbanken o.ä. Es reicht die Website aufzurufen und man kann direkt loslegen
 
 ## Screenshot
-// Todo
+![Bild des Fragebogens](img/simulator1.png)
+![Bild der Auswertung](img/simulator2.png)
 
 ## Weitere, benötigte Dateien
 * Fischbilder
