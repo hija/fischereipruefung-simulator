@@ -51,13 +51,10 @@ export default {
             for (let i = 0; i < 3; i++){
                 let checkboxElement= document.getElementById(this.id + i)
                 let checkboxIsChecked = checkboxElement.checked
-                if ((checkboxIsChecked && this.solution.includes(i)) || 
-                    (!checkboxIsChecked && !this.solution.includes(i))){
-                    checkboxElement.parentNode.style.color = 'green'
-                }else{
-                    checkboxElement.parentNode.style.color = 'red'
+                checkboxElement.parentNode.style.color = this.solution.includes(i) ? 'green' : 'red'
+                let checkbox_right_clicked = (checkboxIsChecked && this.solution.includes(i)) || (!checkboxIsChecked && !this.solution.includes(i))
+                if (!checkbox_right_clicked)
                     this.solvedcorrectly = false
-                }
 
             }
             this.$emit('evaluated', this.id, this.solvedcorrectly)
