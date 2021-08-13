@@ -52,3 +52,6 @@ server {
 ```
 
 7. Certbot einrichten für ein SSL-Zertifikat
+
+## Weitere Ideen
+* Frontend-Only Applikation bauen (Backend-Server macht im Moment nichts außer den Fragebogen zu generieren und es war ursprünglich ein ausführlicheres User Management geplant)
